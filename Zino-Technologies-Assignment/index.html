@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Drag Drop application</title>
+</head>
+<body>
+    <div class="modal" id="card_form">
+        <div class="header">
+          <div class="title">Add card</div>
+          <button class="btn close-modal">&times;</button>
+        </div>
+        <div class="body">
+          <input type="text" id="card_input" /> 
+          <input type="submit" value="Add card" id="card_submit"/>
+        </div>
+      </div>
+    <div class = "dragdrop-container">
+        <div class = "color" id="no_status" style="margin-left: 150px; margin-top: 50px;"">
+            <h1 style="margin: -10px; width: 250px">Red <button id = "add_btn" data-target-modal="#card_form">Add</button></h1>
+            <div class="card" draggable="true" style="background-color:lightcoral; height: 100px;">
+                ball 
+                <span class = "close">&times;</span> 
+            </div>
+            <div class="card" draggable="true" style="background-color:lightcoral; height: 100px;">
+                bat  
+                <span class = "close">&times;</span> 
+            </div>
+            <div class="card" draggable="true" style="background-color:lightcoral; height: 100px;">
+                tennis
+                <span class = "close">&times;</span> 
+            </div>
+        </div>
+        <div class = "color" id="no1_status" style="margin-left: 160px; margin-top: 50px;">
+            <h1 style="margin: -10px; width: 250px">Blue <button id = "add_btn" data-target-modal="#card_form">Add</button></h1>
+            <div class="card" draggable="true" style="background-color:rgb(121, 168, 249); height: 100px;">
+                cricket
+                <span class = "close">&times;</span> 
+            </div>
+            <div class="card" draggable="true" style="background-color:rgb(121, 168, 249); height: 100px;">
+                sports
+                <span class = "close">&times;</span> 
+                </div>
+                <div class="card" draggable="true" style="background-color:rgb(121, 168, 249); height: 100px;">
+                    football 
+                    <span class = "close">&times;</span> 
+                </div>
+                <div class="card" draggable="true" style="background-color:rgb(121, 168, 249); height: 100px;">
+                    NBA
+                    <span class = "close">&times;</span> 
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class = "color" style="margin:80px; margin-top: -10px;">
+            <h1>Green <button id = "add_btn" data-target-modal="#card_form">Add</button></h1>
+            <div class="card" draggable="true" style="background-color:lightgreen; height: 100px;">
+                worldcup 
+                <span class = "close">&times;</span> 
+            </div>
+            <div class="card" draggable="true" style="background-color:lightgreen; height: 100px;">
+                IPL
+                <span class = "close">&times;</span> 
+            </div>
+        </div>
+        <div class = "color">
+            <h1 style="margin: 8px; width: 250px">Black <button id = "add_btn" data-target-modal="#card_form">Add</button></h1>
+            <div class="card" draggable="true" style="background-color:rgb(143, 145, 143); height: 100px;">
+                FIFA
+                <span class = "close">&times;</span> 
+            </div>
+            <div class="card" draggable="true" style="background-color:rgb(143, 145, 143); height: 100px;">
+                India
+                <span class = "close">&times;</span> 
+            </div>
+            <div class="card" draggable="true" style="background-color:rgb(143, 145, 143); height: 100px;">
+                Hockey
+                <span class = "close">&times;</span> 
+            </div>
+        </div>
+    </div>
+
+
+    <div id="overlay"></div>
+    <script src = "script.js"></script>
+</body>
+</html>
